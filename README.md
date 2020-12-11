@@ -1,3 +1,4 @@
 # v0xb0x
-v0xb0x is a setup tool to make your Raspberry Pi (4B+ and Zero W) into either a pirate box or a MESH network for 1st responders or similar.
-
+This is a collection of tools, scripts and a website to create a central hub for sharing data, messages and information
+without the need for infrastructure. It is similar to many other pirate boxes available for Raspberry Pi machines, but
+this is my own flavour and has my own twists on it.

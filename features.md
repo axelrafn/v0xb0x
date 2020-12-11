@@ -13,5 +13,6 @@ This is just where I jot down things I want the system to have.
     * Enable AP mode without encryption for open connections
 
 * HTTP Server
+    * PHP must be running
     * run server in HTTPS mode
     * Offer blind drop-uploads (what max size?)
