@@ -10,29 +10,51 @@ Not here in any special order, just ideas and thoughts on the system.
     * 512MB RAM
     * 16GB "disk" (microSD card)
 
+* Powered by a USB battery bank (10-20k mah)
+
 # The list
 
-* MESH mode
-    * Offer to put device in MESH mode for 1st responder type scenarios
-    * Link for info on MESH: https://github.com/binnes/WiFiMeshRaspberryPi
-
-* WiFi AP mode
-    * Software: hostapd & dnsmasq
-    * Enable AP mode with WPA2-PSK for encrypted communication
-    * Enable AP mode without encryption for open connections ?
+# TODO
+* DNS 
+    * Change * to 10.1.1.1 so the webserver can handle all requests.
+    * dnsmasq should do the trick
 
 * HTTP Server
     * PHP must be running
     * run server in HTTPS mode
-    * Offer blind drop-uploads (what max size?)
+    * Small dropoff script for files less than 128/256MB ?
+    * Create script that creates a user for you for BB and FTP
+ 
+* FTP Server
+    * pure-ftpd?
+    * Virtual users created via webscript, unique dirs only accessable by them.
+
+* Bulletin board (Message Board)
+    * PHPBB?
+        * Will we need to clean it between boots?
+        * Keep data between boots?
+        * Offer "wiper" to wipe installation and clean install it again?
+
+* Dropoff data
+    * Custom made.
+    * No name, just file upload.
+
+* MESH mode ?
+    * Offer to put device in MESH mode for 1st responder type scenarios
+    * Link for info on MESH: https://github.com/binnes/WiFiMeshRaspberryPi
+
+# DONE
+* WiFi AP mode
+    * Software: hostapd & dnsmasq
+    * Enable AP mode with WPA2-PSK for encrypted communication
 
 # Plans
 
 * What do we need at first?
 
 * OS side
-    * Start machine, put WiFi into AP mode
-    * Have a DHCPD to supply IPs to clients
+    * Start machine, put WiFi into AP mode X
+    * Have a DHCPD to supply IPs to clients X
     * Have a DNS to route everything to the local website?
 
 * Web side
