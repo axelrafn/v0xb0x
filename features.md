@@ -15,31 +15,17 @@ Not here in any special order, just ideas and thoughts on the system.
 # The list
 
 # TODO
-* DNS 
-    * Change * to 10.1.1.1 so the webserver can handle all requests.
-    * dnsmasq should do the trick
-
 * HTTP Server
     * PHP must be running
-    * run server in HTTPS mode
-    * Small dropoff script for files less than 128/256MB ?
-    * Create script that creates a user for you for BB and FTP
+    * Create script that creates a user for you for FTP
  
 * FTP Server
     * pure-ftpd?
     * Virtual users created via webscript, unique dirs only accessable by them.
 
-* Bulletin board (Message Board)
-    * PHPBB?
-        * Will we need to clean it between boots?
-        * Keep data between boots?
-        * Offer "wiper" to wipe installation and clean install it again?
-
-* Dropoff data
-    * Custom made.
-    * No name, just file upload.
-
+# FUTURE
 * MESH mode ?
+    * Perhaps a fork off this project?
     * Offer to put device in MESH mode for 1st responder type scenarios
     * Link for info on MESH: https://github.com/binnes/WiFiMeshRaspberryPi
 
@@ -48,18 +34,15 @@ Not here in any special order, just ideas and thoughts on the system.
     * Software: hostapd & dnsmasq
     * Enable AP mode with WPA2-PSK for encrypted communication
 
-# Plans
-
+# PLANS
 * What do we need at first?
 
 * OS side
     * Start machine, put WiFi into AP mode X
     * Have a DHCPD to supply IPs to clients X
     * Have a DNS to route everything to the local website?
-
-* Web side
-    * Offer up a simple PHP website to upload data
-        * Should I offer FTP for large files?
+    * Offer FTP for large files?
         * MAX filesize on the MicroSD cards is 4GB (FAT32 limit)
-            * Make another partition on the card with ext3/4 ?
-    * Offer a simple message board?
+        * Make another partition on the card with ext3/4 ?
+* Web side
+    * Offer up a simple PHP website to create a FTP user and password
