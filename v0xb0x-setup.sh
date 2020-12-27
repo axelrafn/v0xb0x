@@ -13,6 +13,7 @@ apt-get install -y hostapd dnsmasq
 apt-get install -y apache2 php libapache2-mod-php 
 apt-get install -y mariadb-server-10.0
 apt-get install -y gpm
+apt-get install -y pure-ftpd
 
 
 # lock down MySQL
@@ -45,3 +46,6 @@ cat ./configs/hostapd.default.conf >> /etc/default/hostapd.conf
 
 systemctl start hostapd
 systemctl start dnsmasq
+
+# Pure-FTPd settings
+touch /etc/pure-ftpd/pureftpd.pdb
