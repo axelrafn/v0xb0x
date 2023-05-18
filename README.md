@@ -1,5 +1,5 @@
 # v0xb0x
-This is a project I thought of after the Egyptian revolution of 2011, I wondered how data and information could be transferred easilly between members of the protests without the need of infrastructure. Since Raspberry Pi machines have been so popular and the Raspberry Pi Zero W can be run on battery power I mixed these two things together and started learning about "Pirate boxes".
+This is a project I thought of after the [Egyptian revolution of 2011](https://en.wikipedia.org/wiki/2011_Egyptian_revolution), I wondered how data and information could be transferred easilly between members of the protests without the need of infrastructure. Since Raspberry Pi machines have been so popular and the Raspberry Pi Zero W can be run on battery power I mixed these two things together and started learning about "Pirate boxes".
 None of the ones I found were actively maintained nor did they have a recent release, so I decided to start one myself.
 
 ## What is a Pirate Box?
